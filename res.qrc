@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/sound">
+        <file>ffaboss.mp3</file>
+        <file>yisell_sound_2010060315174759838_88016.wav</file>
+    </qresource>
+    <qresource prefix="/picture">
+        <file>fly.png</file>
+        <file>frag.png</file>
+        <file>13049.png</file>
+        <file>03Q58PICBvR_1024.jpg</file>
+        <file>center.png</file>
+        <file>taiko_cal_0801_01.jpg</file>
+    </qresource>
+</RCC>
