@@ -24,7 +24,7 @@ MainWindow::~MainWindow()
 void MainWindow::keyPressEvent(QKeyEvent *event){
     if(event->key()==Qt::Key_J)
     {
-        sounds->setMedia(QUrl("qrc:/sound/yisell_sound_2010060315174759838_88016.wav"));
+        sounds->setSource(QUrl("qrc:/sound/yisell_sound_2010060315174759838_88016.wav"));
         int x=ui->red->x();
         int y=ui->red->y();
         int z=ui->lcdNumber->intValue();
@@ -45,7 +45,7 @@ void MainWindow::keyPressEvent(QKeyEvent *event){
     }
     if(event->key()==Qt::Key_K)
     {
-        sounds->setMedia(QUrl("qrc:/sound/yisell_sound_2010060315174759838_88016.wav"));
+        sounds->setSource(QUrl("qrc:/sound/yisell_sound_2010060315174759838_88016.wav"));
         int x=ui->blue->x();
         int y=ui->blue->y();
         int z=ui->lcdNumber->intValue();
@@ -97,7 +97,7 @@ else{
     ui->red2->move(QPoint(-1000,40));
     ui->lcdNumber_3->display(intValue);
 
-    music->setMedia(QUrl("qrc:/sound/ffaboss.mp3"));
+    music->setSource(QUrl("qrc:/sound/ffaboss.mp3"));
     music->stop();
     }
 }
@@ -106,7 +106,7 @@ void MainWindow::on_start_clicked()
 {
     MyTimer();
     MyCount();
-      music->setMedia(QUrl("qrc:/sound/ffaboss.mp3"));
+      music->setSource(QUrl("qrc:/sound/ffaboss.mp3"));
       music->play();
    ui->start->move(QPoint(1000,1000));
    ui->blue->move(QPoint(1000,40));
@@ -126,7 +126,7 @@ void MainWindow::on_pushButton_2_clicked()
     ui->lcdNumber_2->display(runtime);
     ui->lcdNumber->display(intValue);
 
-    music->setMedia(QUrl("qrc:/sound/ffaboss.mp3"));
+    music->setSource(QUrl("qrc:/sound/ffaboss.mp3"));
     music->play();
 }
 
